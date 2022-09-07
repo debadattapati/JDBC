@@ -5,7 +5,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class JdbcCreation {
-	private static final String createTableSQL = "create table Employee11(id  number primary key,name varchar2(20),email varchar2(20),country varchar2(20),  password varchar2(20))";
+	private static final String createTableSQL = "create table Employee12(id  number primary key,name varchar2(20),email varchar2(20),country varchar2(20),  password varchar2(20))";
 	public static void main(String[] args) {
 		
 		try (Connection connection = DriverManager
@@ -14,7 +14,7 @@ public class JdbcCreation {
 	            Statement statement = connection.createStatement();) {
 
 	            
-	            statement.execute(JdbcCreate.createTableSQL);
+	            statement.execute(JdbcCreation.createTableSQL);
 	            System.out.println("table created!");
 	        } catch (SQLException e) {
 
