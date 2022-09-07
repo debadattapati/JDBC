@@ -5,7 +5,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class InsertJdbc {
-	private static final String INSERT_MULTIPLE_USERS_SQL = "INSERT INTO Employee11 VALUES(90, 'aasay', 'shy@gmail.com', 'Indpfistan', 'aghcde')";
+	private static final String INSERT_MULTIPLE_USERS_SQL = "INSERT INTO Employee11 VALUES(9, 'aasay', 'shy@gmail.com', 'Indpfistan', 'aghcde')";
 			
 	      public static void main(String[] args) {
 		 try (Connection connection = DriverManager
@@ -29,7 +29,5 @@ public class InsertJdbc {
 	}
 
 }
-
-
 
 
